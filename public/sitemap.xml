@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://selfdriverentalcarscoimbatore.com/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://selfdriverentalcarscoimbatore.com/"/>
+    <image:image>
+      <image:loc>https://selfdriverentalcarscoimbatore.com/og-image.svg</image:loc>
+      <image:title>KK Self Drive - Premium Self Drive Car Rental in Coimbatore</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://selfdriverentalcarscoimbatore.com/logo.png</image:loc>
+      <image:title>KK Self Drive Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://selfdriverentalcarscoimbatore.com/cars</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://selfdriverentalcarscoimbatore.com/cars"/>
+    <image:image>
+      <image:loc>https://selfdriverentalcarscoimbatore.com/og-image.svg</image:loc>
+      <image:title>Car Fleet - KK Self Drive Coimbatore | Swift, Baleno, Ertiga, Innova, Thar</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://selfdriverentalcarscoimbatore.com/about</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://selfdriverentalcarscoimbatore.com/about"/>
+    <image:image>
+      <image:loc>https://selfdriverentalcarscoimbatore.com/og-image.svg</image:loc>
+      <image:title>About KK Self Drive - Car Rental Company in Coimbatore Since 2012</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://selfdriverentalcarscoimbatore.com/contact</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://selfdriverentalcarscoimbatore.com/contact"/>
+    <image:image>
+      <image:loc>https://selfdriverentalcarscoimbatore.com/og-image.svg</image:loc>
+      <image:title>Contact KK Self Drive - Car Rental Support in Coimbatore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://selfdriverentalcarscoimbatore.com/booking</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://selfdriverentalcarscoimbatore.com/booking"/>
+    <image:image>
+      <image:loc>https://selfdriverentalcarscoimbatore.com/og-image.svg</image:loc>
+      <image:title>Book a Car - KK Self Drive Car Rental Booking in Coimbatore</image:title>
+    </image:image>
+  </url>
+</urlset>
