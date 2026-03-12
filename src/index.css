@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 220 60% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 60% 15%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 43 80% 55%;
+    --accent-foreground: 220 60% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 220 60% 15%;
+
+    --radius: 0.75rem;
+
+    --navy: 220 60% 15%;
+    --navy-light: 220 40% 25%;
+    --gold: 43 80% 55%;
+    --gold-light: 43 60% 70%;
+    --silver: 220 10% 75%;
+    --silver-light: 220 10% 92%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 30% 6%;
+    --foreground: 210 40% 98%;
+    --card: 220 30% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 30% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 43 80% 55%;
+    --primary-foreground: 220 60% 10%;
+    --secondary: 220 30% 14%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 30% 14%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 43 80% 55%;
+    --accent-foreground: 220 60% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 30% 18%;
+    --input: 220 30% 18%;
+    --ring: 43 80% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg;
+  }
+
+  .glass-dark {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(43, 80%, 55%), hsl(43, 60%, 70%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-premium {
+    box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.15);
+  }
+
+  .shadow-car {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animate-bounce-slow {
+    animation: bounceSlow 2s infinite;
+  }
+
+  .animate-streak {
+    animation: streak 3s linear infinite;
+  }
+
+  .animate-streak-slow {
+    animation: streak 5s linear infinite;
+  }
+
+  .animate-glow {
+    animation: glow 4s ease-in-out infinite;
+  }
+
+  .animate-pulse-gentle {
+    animation: pulseGentle 3s ease-in-out infinite;
+  }
+}
+
+@keyframes streak {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulseGentle {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounceSlow {
+
+  0%,
+  100% {
+    transform: translateY(-25%) translateX(-50%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0) translateX(-50%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Performance: Reduce repaints */
+* {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Performance: Content visibility for long pages */
+.car-grid {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+}
+
+/* Performance: GPU acceleration for animations */
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+}
